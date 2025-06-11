@@ -1,9 +1,29 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Marques Last Mile</title>
+  <title>Marques Last Mile - Painel</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bem-vindo ao Painel Marques Last Mile</h1>
+  <h1>Bem-vindo, Administrador</h1>
+  <div id="entregas">
+    <h2>Entregas</h2>
+    <ul>
+      <li>Entrega #001 - Em rota</li>
+      <li>Entrega #002 - Entregue</li>
+    </ul>
+  </div>
+  <div id="filtros">
+    <h2>Filtros</h2>
+    <button onclick="filtrar('pendente')">Pendente</button>
+    <button onclick="filtrar('em-rota')">Em Rota</button>
+    <button onclick="filtrar('entregue')">Entregue</button>
+  </div>
+  <div id="mapa">
+    <h2>Mapa</h2>
+    <p>Mapa em tempo real aqui</p>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>

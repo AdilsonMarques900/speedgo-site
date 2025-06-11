@@ -1,1 +1,5 @@
-body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+
+body { font-family: Arial, sans-serif; background: #f2f2f2; padding: 20px; }
+h1 { color: #2a2a2a; }
+#entregas, #filtros, #mapa { margin-bottom: 20px; background: white; padding: 10px; border-radius: 8px; }
+button { margin-right: 10px; }
