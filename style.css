@@ -1,5 +1,36 @@
 
-body { font-family: Arial, sans-serif; background: #f2f2f2; padding: 20px; }
-h1 { color: #2a2a2a; }
-#entregas, #filtros, #mapa { margin-bottom: 20px; background: white; padding: 10px; border-radius: 8px; }
-button { margin-right: 10px; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+header, footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+main {
+  padding: 20px;
+}
+section {
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+input {
+  padding: 8px;
+  margin: 5px;
+}
+button {
+  padding: 10px;
+  background: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+ul {
+  margin-top: 10px;
+}

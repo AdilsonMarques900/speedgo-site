@@ -1,29 +1,61 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>Marques Last Mile - Painel</title>
+  <meta charset="UTF-8">
+  <title>Marques Last Mile</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bem-vindo, Administrador</h1>
-  <div id="entregas">
-    <h2>Entregas</h2>
-    <ul>
-      <li>Entrega #001 - Em rota</li>
-      <li>Entrega #002 - Entregue</li>
-    </ul>
-  </div>
-  <div id="filtros">
-    <h2>Filtros</h2>
-    <button onclick="filtrar('pendente')">Pendente</button>
-    <button onclick="filtrar('em-rota')">Em Rota</button>
-    <button onclick="filtrar('entregue')">Entregue</button>
-  </div>
-  <div id="mapa">
-    <h2>Mapa</h2>
-    <p>Mapa em tempo real aqui</p>
-  </div>
-  <script src="app.js"></script>
+  <header>
+    <h1>Marques Last Mile</h1>
+    <p>Soluções em logística de última milha</p>
+  </header>
+
+  <main>
+    <section id="cadastro">
+      <h2>Cadastro de Entregadores</h2>
+      <form id="form-entregador">
+        <input type="text" placeholder="Nome do entregador" required>
+        <input type="text" placeholder="Veículo" required>
+        <button type="submit">Cadastrar</button>
+      </form>
+      <ul id="lista-entregadores"></ul>
+    </section>
+
+    <section id="gerenciamento">
+      <h2>Gerenciamento de Roteiros</h2>
+      <form id="form-rota">
+        <input type="text" placeholder="Destino" required>
+        <input type="text" placeholder="Status" required>
+        <button type="submit">Adicionar Rota</button>
+      </form>
+      <ul id="lista-rotas"></ul>
+    </section>
+
+    <section id="rastreamento">
+      <h2>Rastreamento em Tempo Real</h2>
+      <p>Última localização: <span id="localizacao">Obtendo...</span></p>
+      <button onclick="simularLocalizacao()">Atualizar Localização</button>
+    </section>
+
+    <section id="relatorios">
+      <h2>Relatórios de Entregas</h2>
+      <button onclick="gerarRelatorio()">Gerar Relatório</button>
+      <pre id="relatorio-output"></pre>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Email: atendimento@marqueslastmile.com.br</p>
+      <p>Telefone: (11) 99999-9999</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Marques Last Mile - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
