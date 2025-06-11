@@ -1,13 +1,109 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpeedGo - Entregas Rápidas</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marques Last Mile</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; color: #333; }
+    header {
+      background: #0d6efd;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.8em; }
+    header p { margin-top: 10px; font-size: 1.2em; }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #003eaa;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav a:hover { background: #0056d2; }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 { margin-bottom: 20px; color: #0d6efd; }
+    ul { list-style: none; }
+    ul li::before { content: '✔ '; color: green; }
+    .contato a {
+      background: #25d366;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    iframe { width: 100%; height: 300px; border: none; margin-top: 20px; }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-    <h1>Bem-vindo ao SpeedGo</h1>
-    <p>O seu site de entregas rápidas.</p>
+
+  <header>
+    <h1>Marques Last Mile</h1>
+    <p>Sua entrega no destino certo, com agilidade e controle total.</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#empresas">Para Empresas</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Especialistas em logística Last Mile, atuamos com foco em agilidade, transparência e inovação. Conectamos empresas e consumidores através de entregas inteligentes.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Entrega expressa no mesmo dia</li>
+      <li>Coleta e distribuição urbana</li>
+      <li>Rastreamento em tempo real</li>
+      <li>Logística reversa</li>
+      <li>Atendimento personalizado</li>
+    </ul>
+  </section>
+
+  <section id="tecnologia">
+    <h2>Tecnologia</h2>
+    <p>Contamos com sistemas modernos, incluindo aplicativo para entregadores, painel web com localização ao vivo e integração com plataformas de e-commerce.</p>
+  </section>
+
+  <section id="empresas">
+    <h2>Para Empresas</h2>
+    <p>Otimize sua entrega final com planos personalizados e relatórios detalhados. Trabalhamos lado a lado com marketplaces, lojas virtuais e comércios locais.</p>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>Estamos prontos para te atender pelo WhatsApp.</p>
+    <a href="https://wa.me/5588999999999" target="_blank">Fale conosco</a>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Marques Last Mile. Todos os direitos reservados.</p>
+  </footer>
+
 </body>
 </html>
