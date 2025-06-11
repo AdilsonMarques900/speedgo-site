@@ -1,0 +1,1 @@
+console.log('Sistema Marques Last Mile carregado');
